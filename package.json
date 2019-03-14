@@ -1,0 +1,44 @@
+{
+  "name": "atto-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "config": "^3.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "micro": "^9.3.3",
+    "micro-query": "^0.3.0",
+    "pg": "^7.8.1",
+    "qs": "^6.6.0",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^2.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/micro": "^7.3.3",
+    "@types/node": "^11.9.5",
+    "@types/pg": "^7.4.13",
+    "@types/qs": "^6.5.1",
+    "micro-dev": "^3.0.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production LOGS_DIR=./.docker/logs micro dist/server.js",
+    "tsdev": "tsc -b ./tsconfig.json  --watch",
+    "dev": "NODE_ENV=development LOGS_DIR=./.docker/logs micro-dev ./dist/server.js -i ./.docker  -w ./dist"
+  },
+  "authors": [{
+    "name": "Yevhenii Ivanets",
+    "url": ""
+  }, {
+    "name": "Mikhail Demidoff",
+    "url": ""
+  }],
+  "license": "MIT"
+}
