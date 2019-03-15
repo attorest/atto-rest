@@ -30,6 +30,6 @@ Our background motivation is simple:
 
 ⚠️**WARNING**: CURRENTLY NOT AVALIABLE
 ```bash
-npm install --save attorest
+npm install --save atto-rest
 ```
 ---
