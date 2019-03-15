@@ -1,5 +1,8 @@
-# atto-rest
+# Atto REST 
+[![Maintainability](https://api.codeclimate.com/v1/badges/952c25d0bac6146489b5/maintainability)](https://codeclimate.com/github/attorest/atto-rest/maintainability) [![Coverage](https://api.codeclimate.com/v1/badges/952c25d0bac6146489b5/test_coverage)](https://codeclimate.com/github/attorest/atto-rest/test_coverage)
+
 _Clean and simple modern WEB services_
+> atto (symbol a) is a unit prefix in the metric system denoting a factor of 10^−18
 
 ### WHAT?
 🚀 Clean (minimal dependencies), strongly typed, asyncronous, robust framework for NodeJS backend development written with TypeScript, designed to solve web problems with cutting-edge technologies, patterns and architecture

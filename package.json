@@ -1,8 +1,18 @@
 {
   "name": "atto-rest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "1.0.1",
+  "description": "Clean and simple modern WEB services",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attorest/atto-rest"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "homepage": "https://www.npmjs.com/package/atto-rest",
+  "keywords": ["atto", "rest", "micro", "service", "microservice", "attoservice", "attorest", "API", "RESTAPI", "RESTful", "microrest", "route", "router", "routes"],
+  "bin": "dist/server.js",
+  "main": "dist/server.js",
   "dependencies": {
     "config": "^3.0.1",
     "eslint": "^5.13.0",
@@ -29,16 +39,20 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish attorest/atto-rest",
     "start": "NODE_ENV=production LOGS_DIR=./.docker/logs micro dist/server.js",
     "tsdev": "tsc -b ./tsconfig.json  --watch",
     "dev": "NODE_ENV=development LOGS_DIR=./.docker/logs micro-dev ./dist/server.js -i ./.docker  -w ./dist"
   },
   "authors": [{
     "name": "Yevhenii Ivanets",
-    "url": ""
+    "url": "https://github.com/ivanets"
   }, {
     "name": "Mikhail Demidoff",
-    "url": ""
+    "url": "https://github.com/thundermind"
+  }, {
+    "name": "Sophiia Kolesnyk",
+    "url": "https://github.com/SophieKolesnyk"
   }],
   "license": "MIT"
 }
